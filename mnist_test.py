@@ -2,6 +2,7 @@
 # mail:    admin@9crk.com
 # author:  9crk.from China.ShenZhen
 # time:    2017-03-22
+# Edited by: Durvesh Pathak
 
 import caffe
 import numpy as np
