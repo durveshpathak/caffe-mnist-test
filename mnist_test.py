@@ -10,12 +10,12 @@ import sys
 import Image
 import matplotlib.pyplot as plt
 
-model = 'examples/mnist/lenet.prototxt';
+model = 'examples/mnist/lenet.prototxt'; #Please put in the right path
 weights = 'examples/mnist/lenet_iter_10000.caffemodel';
 net = caffe.Net(model,weights,caffe.TEST);
 caffe.set_mode_cpu()
 #img = caffe.io.load_image(sys.argv[1], color=False)
-img = cv2.imread(sys.argv[1],0)
+img = cv2.imread('2.png',0)
 if img.shape != [28,28]:
     img2 = cv2.resize(img,(28,28))
     img = img2.reshape(28,28,-1);
